@@ -10,7 +10,7 @@ st.title("Modelo Spam Prediccion")
 st.markdown("""Power by: [Guillermo Lugo]""")
 st.divider()
 
-val1 = st.text_input(label, value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, *, placeholder="ingrese el URL", disabled=False, label_visibility="visible", icon=None, width="stretch")
+val1 = st.text_input(label, value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, placeholder="ingrese el URL", disabled=False, label_visibility="visible", icon=None, width="stretch")
 
 
 if st.button("Prediccion"):
