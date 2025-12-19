@@ -2,7 +2,7 @@ from pickle import load
 import streamlit as st
 
 
-model = load(open('/workspaces/ML-web-app-using-Streamlit/models/nlp-url-spam.pkl', 'rb'))
+model = load(open("models/nlp-url-model.pkl", 'rb'))
 class_dict = {"0": "No Spam",
               "1": "Spam"}
 
