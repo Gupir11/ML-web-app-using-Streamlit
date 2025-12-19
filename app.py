@@ -3,6 +3,7 @@ import streamlit as st
 
 
 model = load(open('models/nlp-url-spam.pkl', 'rb'))
+vectorizer = load(open("data/nlp-url-spam-vectorizer", "rb"))
 class_dict = {"0": "No Spam",
               "1": "Spam"}
 
