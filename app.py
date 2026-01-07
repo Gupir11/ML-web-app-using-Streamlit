@@ -1,12 +1,12 @@
 from pickle import load
 import streamlit as st
 
-model = load(open("data/svm_original_model.pkl", "rb"))
-vectorizer = load(open("data/tfidf_vectorizer.pkl", "rb"))
+model = load(open("models/nlp-url-spam.pkl", "rb"))
+vectorizer = load(open("models/nlp-url-spam-vectorizer.pkl", "rb"))
 class_dict = {0: "No Spam", 1: "Spam"}
 
 st.title("Spam - Model prediction")
-st.markdown("""Power by: [Josefina Aispuro Merelles]""")
+st.markdown("""Power by: [Guillermo Lugo]""")
 st.divider()
 
 url = st.text_input("Enter a URL to analyze")
